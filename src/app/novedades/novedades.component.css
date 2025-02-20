@@ -1,0 +1,58 @@
+.novedades-section{
+    margin-bottom: 80px;
+    position: relative;
+    z-index: 1;
+}
+
+.novedades-title {
+  text-align: center;
+  margin-bottom: 40px; /* Aumentamos el espacio */
+  color: #FABC16; /* Color amarillo */
+}
+.novedades-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.novedad {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.novedad .card-body {
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    position: relative;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.novedad .card-body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4);
+}
+.novedad .card-body > * {
+    position: relative;
+    z-index: 1;
+}
+
+.novedad .card-text {
+  margin-bottom: 10px;
+}
+
+.btn-primary {
+    background-color: #FABC16;
+    border-color: #FABC16;
+  }

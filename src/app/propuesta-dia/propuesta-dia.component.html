@@ -1,0 +1,27 @@
+<div class="propuesta-dia-section">
+  <h2 class="propuesta-dia-title">Propuesta del día</h2>
+  <div class="card propuesta-dia">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img
+            [src]="selectedPropuesta.image"
+            class="img-fluid rounded-start"
+            [alt]="selectedPropuesta.title"
+          />
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">{{ selectedPropuesta.title }}</h5>
+            <h6 class="card-subtitle mb-2 text-muted">{{ selectedPropuesta.subtitle }}</h6>
+            <p class="card-text">{{ selectedPropuesta.description }}</p>
+            <button
+              class="btn btn-primary mt-3"
+              (click)="changePropuesta()"
+            >
+              Cambiar propuesta
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>

@@ -1,0 +1,12 @@
+<div class="novedades-section">
+    <h2 class="novedades-title">Novedades</h2>
+    <div class="novedades-container">
+        <div class="card novedad" *ngFor="let novedad of novedades">
+            <div class="card-body" [style.backgroundImage]="'url(' + novedad.imagen + ')'">
+                <h5 class="card-title">{{ novedad.titulo }}</h5>
+                <p class="card-text">{{ novedad.descripcion }}</p>
+                <a href="#" class="btn btn-primary">Saber más</a>
+            </div>
+        </div>
+    </div>
+</div>

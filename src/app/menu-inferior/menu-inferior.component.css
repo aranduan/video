@@ -1,0 +1,22 @@
+.menu-inferior {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 10px 0;
+  z-index: 1000; /* Asegura que el footer esté por encima del resto del contenido */
+}
+
+.menu-inferior a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-inferior img {
+  max-height: 30px;
+}

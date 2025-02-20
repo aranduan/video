@@ -1,0 +1,45 @@
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-4">
+            <div class="card shadow-sm bg-light">
+                <img src="https://i.imgur.com/1Kz7WWS.png" class="card-img-top rounded-circle object-fit-cover"
+                    alt="Imagen de perfil" style="height: 200px;">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Monica Geller</h5>
+                    <p class="card-text">¡Cocina conmigo!</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-8">
+            <div class="card shadow-sm bg-light">
+                <div class="card-body">
+                    <h5 class="card-title">Información Personal</h5>
+                    <p class="card-text"><i class="bi bi-envelope me-4"></i> <strong>Correo electrónico:</strong> {{ email }}</p>
+                    <p class="card-text"><i class="bi bi-geo-alt me-4"></i> <strong>Ubicación:</strong> Central Perk, Nueva York</p>
+                    <p class="card-text"><i class="bi bi-instagram me-4"></i> <strong>Instagram:</strong> <a href="https://www.instagram.com/{{instagramUrl}}">Friends</a></p>
+                </div>
+            </div>
+            <div class="card mt-3 shadow-sm bg-light">
+                <div class="card-body">
+                    <h5 class="card-title">Recetas para tus amistades</h5>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Triffle de Rachel</li>
+                        <li class="list-group-item">Fajitas abrasamanos de Ros</li>
+                        <li class="list-group-item">Tarta, tarta</li>
+                    </ul>
+                </div>
+            </div>
+           </div>
+           <div class="col-md-4">
+            <div class="card mt-3 shadow-sm bg-light"  style="height: 100%">
+                <div class="card-body">
+                    <!--<h5 class="card-title">Redes Sociales</h5>-->
+                    <div class="d-flex justify-content-center">
+                       <app-redes-sociales></app-redes-sociales>
+                    </div>
+                    <div class="video-spacer"></div> 
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,19 @@
+.card-img-top {
+    width: 100%; /* Aumenta el tamaño de la imagen */
+    height: 100%; /* Aumenta el tamaño de la imagen */
+    object-fit: cover;
+    margin: 0 auto;
+  }
+  
+  .card-title {
+    font-size: 1.5rem; /* Aumenta el tamaño del título */
+    font-weight: bold; /* Pone el título en negrita */
+  }
+  
+  .card-text {
+    font-size: 1.2rem; /* Aumenta el tamaño del texto */
+  }
+
+  .video-spacer {
+    height: 100px; /* Define la altura del espacio adicional */
+  }

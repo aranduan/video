@@ -1,0 +1,22 @@
+<div class="container mt-5">
+  <h2 class="mb-4">Nuestras Deliciosas Recetas</h2>
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col" *ngFor="let receta of recetas">
+      <div class="card shadow-sm h-100">
+        <img src="{{receta.imagen}}" class="card-img-top" alt="Imagen de la receta">
+        <div class="card-body">
+          <h5 class="card-title">{{ receta.nombre }}</h5>
+          <p class="card-text">{{ receta.descripcion }}</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <button class="btn btn-sm btn-outline-secondary" (click)="mostrarDescripcion(receta.id)">Ver más</button>
+            <button class="btn btn-sm" (click)="marcarComoCocinada(receta.id)" [ngClass]="receta.cocinada ? 'btn-success' : 'btn-outline-secondary'">
+              <i class="bi bi-check-circle"></i>
+              {{ receta.cocinada ? 'Cocinada' : 'Marcar como cocinada' }}
+            </button>
+            <small class="text-muted">ID: {{ receta.id }}</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

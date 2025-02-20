@@ -1,0 +1,17 @@
+<header class="header">
+  <div class="header-content">
+      <div class="logo">
+          <img src="https://i.imgur.com/8FsW3Qz.png" alt="Logotipo" />
+      </div>
+      <div class="menu-icon" (click)="toggleMenu()">☰</div>
+  </div>
+   <nav id="menu-options" [ngClass]="{'menu-options-mobile': windowWidth <= 992, 'menu-options-desktop': windowWidth > 992, 'open': isMenuOpen }">
+    <ul  >
+      <li ><a routerLink="/" routerLinkActive="active">Home</a></li>
+      <li ><a routerLink="/novedades" routerLinkActive="active">Novedades</a></li>
+       <li ><a routerLink="/recetas" routerLinkActive="active">Recetas</a></li>
+       <li ><a routerLink="/perfil" routerLinkActive="active">Perfil</a>
+     </li>
+    </ul>
+  </nav>
+</header>

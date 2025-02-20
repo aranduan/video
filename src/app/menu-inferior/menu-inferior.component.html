@@ -1,0 +1,17 @@
+<nav class="menu-inferior">
+    <a routerLink="/" [ngClass]="{'active': currentRoute === '/'}" >
+        <img src="https://i.imgur.com/25NNTef.png" alt="Home" />
+    </a>
+    <a routerLink="/favorites" [ngClass]="{'active': currentRoute === '/favorites'}" >
+        <img src="https://i.imgur.com/XHoZ5oa_d.png?maxwidth=520&shape=thumb&fidelity=high" alt="Favoritos" />
+    </a>
+    <a routerLink="/recipes" [ngClass]="{'active': currentRoute === '/recipes'}">
+        <img src="https://i.imgur.com/xGwdERx.png" alt="Recetas" />
+    </a>
+    <a routerLink="/community" [ngClass]="{'active': currentRoute === '/community'}">
+        <img src="https://i.imgur.com/r7ESYKL_d.png?maxwidth=520&shape=thumb&fidelity=high" alt="Comunidad" />
+    </a>
+    <a routerLink="/profile" [ngClass]="{'active': currentRoute === '/profile'}">
+        <img src="https://i.imgur.com/009TJni_d.png?maxwidth=520&shape=thumb&fidelity=high" alt="Perfil" />
+    </a>
+</nav>
