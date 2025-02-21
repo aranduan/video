@@ -12,7 +12,7 @@ import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 export class RedesSocialesComponent implements OnInit {
   safeSrc: SafeResourceUrl;
   constructor(private sanitizer: DomSanitizer) {
-    this.safeSrc = this.sanitizer.bypassSecurityTrustResourceUrl("https://www.youtube.com/embed/MbynU8Pvc6Y");
+    this.safeSrc = this.sanitizer.bypassSecurityTrustResourceUrl("https://www.youtube.com/embed/A2_HkYp4BqU");
   }
   ngOnInit(): void {
   }
